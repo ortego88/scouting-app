@@ -2,7 +2,7 @@
 	{
 		"name":"AD Nervión",			
 		"id":"001",
-		"adress":"Calle Francisco Buendía, 2, Sevilla (Complejo Dvo. Antonio Puerta)",
+		"address":"Calle Francisco Buendía, 2, Sevilla (Complejo Dvo. Antonio Puerta)",
 		"phone":"954640002",
 		"email":"direcciongeneral@adnervion.es",
 		"position":["37.3768326", "-5.965542,15"],
@@ -43,7 +43,7 @@
 	{
 		"name":"AD San José",
 		"id":"002",
-		"adress":"Calle Los Bodegones, 10, La Rinconada",
+		"address":"Calle Los Bodegones, 10, La Rinconada",
 		"phone":"954870285",
 		"email":"a.d.sanjose@hotmail.com",
 		"position":["37.4917761", "-5.9393903,18"],
@@ -84,7 +84,7 @@
 	{
 		"name":"AD Pvo. Sevilla Este",
 		"id":"003",
-		"adress":"Avenida del Deporte, s/n, Sevilla",
+		"address":"Avenida del Deporte, s/n, Sevilla",
 		"phone":"652010028",
 		"email":"pvo.sevillaeste@hotmail.es",
 		"position":["37.3909189", "-5.913569,17"],
@@ -117,7 +117,7 @@
 	{
 		"name":"Amigos Dvos. Cerro del Águila",
 		"id":"004",
-		"adress":"Calle Dante, s/n (Antiguo Colegio Santa Teresa)",
+		"address":"Calle Dante, s/n (Antiguo Colegio Santa Teresa)",
 		"phone":"620554486",
 		"email":"admin.adcerrodelaguila@gmail.com",
 		"position":["37.3707941", "-5.9633545"],
@@ -142,7 +142,7 @@
 	{
 		"name":"Andalucía Este CF",
 		"id":"005",
-		"adress":"Doctor Miguel Ríos Sarmiento, 1, Sevilla",
+		"address":"Doctor Miguel Ríos Sarmiento, 1, Sevilla",
 		"phone":"954402135",
 		"email":"cdandalueste@gmail.com",
 		"position":["37.390526", "-5.9243945"],
@@ -167,7 +167,7 @@
 	{
 		"name":"CD Antonio Puerta",
 		"id":"006",
-		"adress":"Francisco Buendía, 2, Sevilla",
+		"address":"Francisco Buendía, 2, Sevilla",
 		"phone":"954640002",
 		"email":"direcciongeneral@adnervion.es",
 		"position":["37.3768326", "-5.965542,15"],
@@ -192,7 +192,7 @@
 	{
 		"name":"Atlético Algabeño",
 		"id":"007",
-		"adress":"Francisco Pacheco, 8, La Algaba",
+		"address":"Francisco Pacheco, 8, La Algaba",
 		"phone":"637989555",
 		"email":"atco.algaba@yahoo.es",
 		"position":["37.4608771", "-6.0162729"],
@@ -217,7 +217,7 @@
 	{
 		"name":"UD Bellavista",
 		"id":"008",
-		"adress":"Calle de la Salud, 37, Sevilla",
+		"address":"Calle de la Salud, 37, Sevilla",
 		"phone":"954692689",
 		"email":"bellavistaud@gmail.com",
 		"position":["37.3204933", "-5.9725328"],
@@ -242,7 +242,7 @@
 	{
 		"name":"Real Betis Balompié",
 		"id":"009",
-		"adress":"Avenida de Italia, s/n, Sevilla",
+		"address":"Avenida de Italia, s/n, Sevilla",
 		"phone":"954626861",
 		"email":"acasado@realbetisbalompie.es",
 		"position":["37.3518271", "-5.9843409"],
@@ -280,7 +280,7 @@
 	{
 		"name":"CD Betisevilla",
 		"id":"010",
-		"adress":"Virgen de la Salud, 61, Mairena del Aljarafe",
+		"address":"Virgen de la Salud, 61, Mairena del Aljarafe",
 		"phone":"675572994",
 		"email":"betisevillaclubdeportivo@gmail.com",
 		"position":"",
@@ -305,7 +305,7 @@
 	{
 		"name":"JD Bormujos",
 		"id":"011",
-		"adress":"Calle Guadalimar, 14, Bormujos",
+		"address":"Calle Guadalimar, 14, Bormujos",
 		"phone":"954788449",
 		"email":"jdbormujos2008@hotmail.com",
 		"position":["37.3724439", "-6.0685668"],
@@ -334,7 +334,7 @@
 	{
 		"name":"Calavera CF",
 		"id":"012",
-		"adress":"Plaza Jesús de la Pasión, 3, Sevilla",
+		"address":"Plaza Jesús de la Pasión, 3, Sevilla",
 		"phone":"954225492",
 		"email":"mdiazd@msn.com",
 		"position":["37.3999044", "-5.9696952"],
@@ -363,7 +363,7 @@
 	{
 		"name":"CD Los Caminantes",
 		"id":"013",
-		"adress":"Plaza de Parma, 12, Dos Hermanas",
+		"address":"Plaza de Parma, 12, Dos Hermanas",
 		"phone":"954125277",
 		"email":"clubdeportivoloscaminantes@gmail.com",
 		"position":["37.3234913", "-5.9263663"],
@@ -388,7 +388,7 @@
 	{
 		"name":"CD Alcalá",
 		"id":"014",
-		"adress":"Calle La Taurina, Nuevo Estadio Cdad. de Alcalá",
+		"address":"Calle La Taurina, Nuevo Estadio Cdad. de Alcalá",
 		"phone":"955698762",
 		"email":"alcalaclubdeportivo@gmail.com",
 		"position":["37.330456", "-5.8332917"],
@@ -425,7 +425,7 @@
 	{
 		"name":"CD Cabecense",
 		"id":"015",
-		"adress":"C/ Alcalde Lopez Silva, 15, Las Cabezas de San Juan",
+		"address":"C/ Alcalde Lopez Silva, 15, Las Cabezas de San Juan",
 		"phone":"955870518",
 		"email":"cabecensecd@yahoo.es",
 		"position":["36.975309", "-5.9411109"],
@@ -450,7 +450,7 @@
 	{
 		"name":"CD Coronil",
 		"id":"016",
-		"adress":"Calle San Sebastián, 114, El Coronil",
+		"address":"Calle San Sebastián, 114, El Coronil",
 		"phone":"678426921",
 		"email":"coronilcd@hotmail.com",
 		"position":["37.081000", "-5.639469"],
@@ -475,7 +475,7 @@
 	{
 		"name":"CD Mairena",
 		"id":"017",
-		"adress":"Avenida Capuleti, s/n, Mairena del Alcor",
+		"address":"Avenida Capuleti, s/n, Mairena del Alcor",
 		"phone":"618286121",
 		"email":"prensacdmairena@hotmail.com",
 		"position":["37.3647462", "-5.7578717"],
@@ -500,7 +500,7 @@
 	{
 		"name":"CD Utrera",
 		"id":"018",
-		"adress":"Paseo de Consolación, s/n, Utrera",
+		"address":"Paseo de Consolación, s/n, Utrera",
 		"phone":"954864030",
 		"email":"info@cdutrera.com",
 		"position":["37.1902579", "-5.7723097"],
@@ -533,7 +533,7 @@
 	{
 		"name":"Centro Histórico AA.VV.",
 		"id":"019",
-		"adress":"Calle Venecia, local 3",
+		"address":"Calle Venecia, local 3",
 		"phone":"625879307         ",
 		"email":"joseavel2@hotmail.com",
 		"position":["37.3930315", "-5.9790109"],
@@ -570,7 +570,7 @@
 	{
 		"name":"CD Círculo Don Bosco",
 		"id":"020",
-		"adress":"Calle Estafeta, 1",
+		"address":"Calle Estafeta, 1",
 		"phone":"635483892",
 		"email":"circulodonbosco@hotmail.com",
 		"position":["37.4157228", "-5.9716641"],
@@ -599,7 +599,7 @@
 	{
 		"name":"Ciudad Jardín CF",
 		"id":"021",
-		"adress":"Calle Alfonso XI, 21 A",
+		"address":"Calle Alfonso XI, 21 A",
 		"phone":"675454591",
 		"email":"ciudadjardincfb@gmail.com",
 		"position":["37.3745781", "-5.9435981"],
@@ -624,7 +624,7 @@
 	{
 		"name":"CF Ciudad de Morón",
 		"id":"022",
-		"adress":"Calle Corbeta, 11, Morón de la Frontera",
+		"address":"Calle Corbeta, 11, Morón de la Frontera",
 		"phone":"659957187",
 		"email":"sego18@hotmail.com",
 		"position":["37.1222361", "-5.4684618"],
@@ -649,7 +649,7 @@
 	{
 		"name":"CMD San Juan",
 		"id":"023",
-		"adress":"Av. Fco. Manuel Martín González, San Juan de Aznalfarache",
+		"address":"Av. Fco. Manuel Martín González, San Juan de Aznalfarache",
 		"phone":"954761726",
 		"email":"cmd.san_juan@yahoo.es",
 		"position":["37.3560083", "-6.0306842"],
@@ -674,7 +674,7 @@
 	{
 		"name":"Coria CF",
 		"id":"024",
-		"adress":"Calle Pintor Manuel de la Rosa, 35, Coria del Río",
+		"address":"Calle Pintor Manuel de la Rosa, 35, Coria del Río",
 		"phone":"954770110",
 		"email":"coriacf1923@hotmail.com",
 		"position":["37.2776619", "-6.0594941"],
@@ -715,7 +715,7 @@
 	{
 		"name":"CD Diablos Rojos",
 		"id":"025",
-		"adress":"Calle Trafalgar, 16",
+		"address":"Calle Trafalgar, 16",
 		"phone":"955335314",
 		"email":"diablosrojos68@hotmail.com",
 		"position":["37.3805883", "-5.9123303"],
@@ -740,7 +740,7 @@
 	{
 		"name":"Dos Hermanas CF",
 		"id":"026",
-		"adress":"Avenida Ramón y Cajal, s/n, Dos Hermanas",
+		"address":"Avenida Ramón y Cajal, s/n, Dos Hermanas",
 		"phone":"955663358",
 		"email":"doshermanascf@hotmail.com",
 		"position":["37.2934818", "-5.926544"],
@@ -765,7 +765,7 @@
 	{
 		"name":"Écija Balompié SAD",
 		"id":"027",
-		"adress":"José Herráinz Caraballo, 3º A",
+		"address":"José Herráinz Caraballo, 3º A",
 		"phone":"955198494",
 		"email":"secretarioecijabalompie@gmail.com",
 		"position":["37.5504999", "-5.0812545"],
@@ -786,7 +786,7 @@
 				},
 				{
 					"category":"Cadete",
-					"names":["Adrián Rosa", "Ramón Rodríguez", "Francisco Javier Delgado", "Francisco Javier Fuentes", "Jesús Paniauga", "Antonio Guzmán", "José Antonio Fernández", "Ismael Urbano", "Juan Antonio Martín", "Marcos Rodríguez", "Juan Francisco Mato", "Fernando Montaño", "Jesús Pastor", "Marino Illescas", "Guillermo Granado", "Manuel Gutiérrez"]
+					"names":["Adrián Rosa", "Ramón Rodríguez", "Francisco Javier Delgado", "Francisco Javier Fuentes", "Jesús Paniagua", "Antonio Guzmán", "José Antonio Fernández", "Ismael Urbano", "Juan Antonio Martín", "Marcos Rodríguez", "Juan Francisco Mato", "Fernando Montaño", "Jesús Pastor", "Marino Illescas", "Guillermo Granado", "Manuel Gutiérrez"]
 				},
 				{
 					"category":"Infantil",
@@ -798,7 +798,7 @@
 	{
 		"name":"CD El Pilar",
 		"id":"028",
-		"adress":"Calle Tesalónica, s/n",
+		"address":"Calle Tesalónica, s/n",
 		"phone":"954252381",
 		"email":"u_d_solea@hotmail.com",
 		"position":["37.3966627", "-5.9627987"],
@@ -823,7 +823,7 @@
 	{
 		"name":"Gilena CF",
 		"id":"029",
-		"adress":"Plaza Virgen de los Dolores, 12, Gilena",
+		"address":"Plaza Virgen de los Dolores, 12, Gilena",
 		"phone":"680369775",
 		"email":"futbolgilena@yahoo.es",
 		"position":["37.245462", "-4.924705"],
@@ -848,7 +848,7 @@
 	{
 		"name":"Huévar CF",
 		"id":"030",
-		"adress":"Avenida de la Alegría, s/n, Huévar del Aljarafe",
+		"address":"Avenida de la Alegría, s/n, Huévar del Aljarafe",
 		"phone":"955138422",
 		"email":"huevarcf@gmail.com",
 		"position":["37.352988", "-6.284788"],
@@ -873,7 +873,7 @@
 	{
 		"name":"La Liara Balompié",
 		"id":"031",
-		"adress":"Avenida de Sevilla, 54 B, Los Palacios y Villafranca",
+		"address":"Avenida de Sevilla, 54 B, Los Palacios y Villafranca",
 		"phone":"955814931",
 		"email":"laliarabp@gmail.com",
 		"position":["37.1587815", "-5.939142"],
@@ -902,7 +902,7 @@
 	{
 		"name":"Lora CF",
 		"id":"032",
-		"adress":"Alameda del Río, s/n, Lora del Río",
+		"address":"Alameda del Río, s/n, Lora del Río",
 		"phone":"954434029",
 		"email":"loracf@live.com",
 		"position":["37.6496942", "-5.5300441"],
@@ -927,7 +927,7 @@
 	{
 		"name":"AD Los Mares",
 		"id":"033",
-		"adress":"Mar Mediterráneo, local 3",
+		"address":"Mar Mediterráneo, local 3",
 		"phone":"608980289",
 		"email":"c.d.a.d.losmares@hotmail.com",
 		"position":["37.41764", "-5.9711227"],
@@ -952,7 +952,7 @@
 	{
 		"name":"CD Los Palacios CF",
 		"id":"034",
-		"adress":"Calle Cervantes, 48, Los Palacios y Villafranca",
+		"address":"Calle Cervantes, 48, Los Palacios y Villafranca",
 		"phone":"955813133",
 		"email":"lospalacioscf2011@hotmail.com",
 		"position":["37.1587815", "-5.939142"],
@@ -977,7 +977,7 @@
 	{
 		"name":"UD Mairena del Aljarafe ",
 		"id":"035",
-		"adress":"Calle Mariana Pineda, s/n, Mairena del Aljarafe",
+		"address":"Calle Mariana Pineda, s/n, Mairena del Aljarafe",
 		"phone":"954181786",
 		"email":"udmairenadelaljarafe@gmail.com",
 		"position":["37.350863", "-6.044077"],
@@ -1006,7 +1006,7 @@
 	{
 		"name":"CD Montequinto",
 		"id":"036",
-		"adress":"Calle Taormina, s/n, Dos Hermanas",
+		"address":"Calle Taormina, s/n, Dos Hermanas",
 		"phone":"665515204",
 		"email":"c.d.montequinto@hotmail.com",
 		"position":["37.3302006", "-5.9300988"],
@@ -1035,7 +1035,7 @@
 	{
 		"name":"AD Mosqueo",
 		"id":"037",
-		"adress":"Plaza Dos Hermanas, 13, Los Palacios y Villafranca",
+		"address":"Plaza Dos Hermanas, 13, Los Palacios y Villafranca",
 		"phone":"955815710",
 		"email":"admosqueo@hotmail.com",
 		"position":["37.1587815", "-5.939142"],
@@ -1060,7 +1060,7 @@
 	{
 		"name":"CD Mosquito",
 		"id":"038",
-		"adress":"Calle Mairena del Alcor, 20, Alcalá de Guadaíra",
+		"address":"Calle Mairena del Alcor, 20, Alcalá de Guadaíra",
 		"phone":"955611075",
 		"email":"cdmosquito1973@hotmail.com",
 		"position":["37.3364064", "-5.8383663"],
@@ -1085,7 +1085,7 @@
 	{
 		"name":"Osuna Bote Club",
 		"id":"039",
-		"adress":"San José de Calazans, s/n, Osuna",
+		"address":"San José de Calazans, s/n, Osuna",
 		"phone":"677823386",
 		"email":"abraham7608@hotmail.com",
 		"position":["37.2402047", "-5.1143456"],
@@ -1110,7 +1110,7 @@
 	{
 		"name":"CD Pablo VI",
 		"id":"040",
-		"adress":"Calle Maíz, 6, Alcalá de Guadaíra",
+		"address":"Calle Maíz, 6, Alcalá de Guadaíra",
 		"phone":"955615176",
 		"email":"cdpablovialcaladeguadaira@hotmail.com",
 		"position":["37.3421134", "-5.836188"],
@@ -1135,7 +1135,7 @@
 	{
 		"name":"Paradas Balompié",
 		"id":"041",
-		"adress":"Calle San Albino, 35, Paradas",
+		"address":"Calle San Albino, 35, Paradas",
 		"phone":"687410588",
 		"email":"adjjuventud@hotmail.com",
 		"position":["37.2844419", "-5.4940296"],
@@ -1160,7 +1160,7 @@
 	{
 		"name":"Peloteros Sierra Sur Sevilla",
 		"id":"042",
-		"adress":"Calle Meridiana, 8, La Puebla de Cazalla",
+		"address":"Calle Meridiana, 8, La Puebla de Cazalla",
 		"phone":"661284788",
 		"email":"escueladefutbol@peloteros.es",
 		"position":["37.2518012", "-4.9895727"],
@@ -1185,7 +1185,7 @@
 	{
 		"name":"Alcosa Polideportivo",
 		"id":"043",
-		"adress":"Avenida Séneca, s/n",
+		"address":"Avenida Séneca, s/n",
 		"phone":"954518359",
 		"email":"cfpalcosa@yahoo.es",
 		"position":["37.4135971", "-5.9291466"],
@@ -1214,7 +1214,7 @@
 	{
 		"name":"Puebla CF",
 		"id":"044",
-		"adress":"Avenida de Isla Mayor, 8, La Puebla del Río",
+		"address":"Avenida de Isla Mayor, 8, La Puebla del Río",
 		"phone":"955772541",
 		"email":"pueblacf--1929@hotmail.com",
 		"position":["37.2631877", "-6.0693215"],
@@ -1243,7 +1243,7 @@
 	{
 		"name":"CD Sededos",
 		"id":"045",
-		"adress":"Calle Cantero, local 1, Dos Hermanas",
+		"address":"Calle Cantero, local 1, Dos Hermanas",
 		"phone":"615652511",
 		"email":"cdsededos@hotmail.com",
 		"position":["37.292496", "-5.9262753"],
@@ -1272,7 +1272,7 @@
 	{
 		"name":"Sevilla Fútbol Club",
 		"id":"046",
-		"adress":"Sevilla FC, s/n",
+		"address":"Sevilla FC, s/n",
 		"phone":"902510011",
 		"email":"jl.torres@sevillafc.es",
 		"position":["37.3526451", "-5.9494507"],
@@ -1313,7 +1313,7 @@
 	{
 		"name":"UD Tomares",
 		"id":"047",
-		"adress":"Calle Camarón de la Isla, s/n, Tomares",
+		"address":"Calle Camarón de la Isla, s/n, Tomares",
 		"phone":"954155788",
 		"email":"udtomares1976@hotmail.com",
 		"position":["37.3727111", "-6.0463192"],
@@ -1346,7 +1346,7 @@
 	{
 		"name":"CD Tor del Rey de Pilas",
 		"id":"048",
-		"adress":"Plaza de Belén, s/n, Pilas",
+		"address":"Plaza de Belén, s/n, Pilas",
 		"phone":"955754910",
 		"email":"deportespilas@pilas.es",
 		"position":["37.3027877", "-6.2927468"],
@@ -1371,7 +1371,7 @@
 	{
 		"name":"Torreblanca CF",
 		"id":"049",
-		"adress":"Calle Vía Flaminia, s/n",
+		"address":"Calle Vía Flaminia, s/n",
 		"phone":"954529702",
 		"email":"torreblancacf.comunicacion@gmail.com",
 		"position":["37.3805883", "-5.9123303"],
@@ -1396,7 +1396,7 @@
 	{
 		"name":"Triana Ar-Rabad AD",
 		"id":"050",
-		"adress":"Calle Maestro Arrieta, 4-5 C",
+		"address":"Calle Maestro Arrieta, 4-5 C",
 		"phone":"954331641",
 		"email":"triana.ar.rabat@gmail.com",
 		"position":["37.3827461", "-6.0171952"],
@@ -1421,7 +1421,7 @@
 	{
 		"name":"UD Morón",
 		"id":"051",
-		"adress":"Calle Dr. Sánchez Guijo, 4 - Bajo",
+		"address":"Calle Dr. Sánchez Guijo, 4 - Bajo",
 		"phone":"602218666",
 		"email":"u.d.moron@hotmail.com",
 		"position":["37.1236195", "-5.4675158"],
@@ -1446,7 +1446,7 @@
 	{
 		"name":"UD Rinconada",
 		"id":"052",
-		"adress":"Avenida Cristo de la Misericordia, La Rinconada",
+		"address":"Avenida Cristo de la Misericordia, La Rinconada",
 		"phone":"635620742",
 		"email":"udrinconada@gmail.com",
 		"position":["37.4921366", "-5.9418064"],
@@ -1471,7 +1471,7 @@
 	{
 		"name":"UD Soleá",
 		"id":"053",
-		"adress":"Calle Tesalónica, s/n",
+		"address":"Calle Tesalónica, s/n",
 		"phone":"954252381",
 		"email":"u_d_solea@hotmail.com",
 		"position":["37.3966627", "-5.9627987"],
@@ -1496,7 +1496,7 @@
 	{
 		"name":"UP Viso",
 		"id":"054",
-		"adress":"Avenida Piedra del Gallo, s/n, El Viso del Alcor",
+		"address":"Avenida Piedra del Gallo, s/n, El Viso del Alcor",
 		"phone":"955292047",
 		"email":"upviso1130@hotmail.es",
 		"position":["37.3801922", "-5.7243512"],
@@ -1533,7 +1533,7 @@
 	{
 		"name":"Villafranco CF",
 		"id":"055",
-		"adress":"Avenida Ntra. Sra. del Mar, s/n, Isla Mayor",
+		"address":"Avenida Ntra. Sra. del Mar, s/n, Isla Mayor",
 		"phone":"654824711",
 		"email":"villafranco-cf@hotmail.com",
 		"position":["37.127386", "-6.1709747"],
