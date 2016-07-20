@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="scoutingApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Scouting-App</title>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+  	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  	<script type="text/javascript" src="js/angular.min.js"></script>
+  	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+  	<script type="text/javascript" src="js/app.js"></script>
+
+</head>
+<body ng-controller="teams">
+<p></p>
+<a class="waves-effect blue-grey btn-large" ng-click="category = {category:''}">Todos los equipos</a>
+<a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Amateur'}">Amateur</a>
+<a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Juvenil'}">Juvenil</a>
+<a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Cadete'}">Cadete</a>
+<a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Infantil'}">Infantil</a>
+<a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Alevin'}">Alevín</a>
+<a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Benjamin'}">Benjamín</a>
+<section ng-repeat="team in teams">
+<article ng-repeat="te in team.clubs | filter:category">
+
+<h1>{{team.name}}</h1>
+
+<img ng-src="{{team.shield}}"/>
+
+<p><strong>Dirección: </strong>{{team.adress}}</p>
+<p><strong>Teléfono: </strong>{{team.phone}}</p>
+<p><strong>Email: </strong>{{team.email}}</p>
+<p><strong>Estadio: </strong>{{team.stadium}}</p>
+<p><strong>Uniforme: </strong></p>
+<ul>
+	<li><strong>Camiseta: </strong>{{team.uniform[0].shirt}}</li>
+	<li><strong>Pantalón: </strong>{{team.uniform[0].pants}}</li>
+	<li><strong>Medias: </strong>{{team.uniform[0].socks}}</li>
+</ul>
+<ul >
+	<li><strong>Equipo {{te.category}}: </strong></li>
+	<li><strong>Porteros: </strong>{{te.names[0]}}, {{te.names[11]}}</li>
+	<li><strong>Defensas: </strong>{{te.names[1]}}, {{te.names[2]}}, {{te.names[3]}}, {{te.names[4]}}, {{te.names[12]}}, {{te.names[13]}}</li>
+	<li><strong>Centrocampistas: </strong>{{te.names[5]}}, {{te.names[6]}}, {{te.names[7]}}, {{te.names[8]}}, {{te.names[14]}}</li>
+	<li><strong>Delanteros: </strong>{{te.names[9]}}, {{te.names[10]}}, {{te.names[15]}}</li>
+</ul>
+
+
+</section>
+
+
+<script type="text/javascript" src="js/angular-route.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
