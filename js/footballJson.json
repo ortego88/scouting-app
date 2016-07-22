@@ -38,7 +38,7 @@
 					"names":["Pablo Vargas", "Francisco Garrido", "Melchor Jiménez", "Daniel Márquez", "Jerónimo Serrano", "Pablo Morillo", "Manuel Arenas", "Pablo Carrasco", "Cristian Miranda", "Antonio Luis González", "Daniel Granado", "Sergio George", "Luis Roldán", "Ángel García", "Carlos Manuel Domínguez", "Carlos Sánchez"]
 				}
 		],
-		"shield":"img/shield/ad_nervion.jpg"
+		"shield":"img/shield/ad_nervion.png"
 	},
 	{
 		"name":"AD San José",
@@ -79,7 +79,7 @@
 					"names":["José María Rojas", "Álvaro Loizaga", "Alejandro Jiménez", "Sergio Ortiz", "Rubén Cos", "Adrián García", "Jaime González", "Raúl Hernández", "Gonzalo Martos", "Fernando Ordoñez", "Alberto Marino", "Marcos Álvarez", "Jesús Delgado", "Moisés Rodríguez", "Mario Vázquez", "Youssef Arabi"]
 				}
 		],
-		"shield":"img/shield/ad_san_jose.jpg"
+		"shield":"img/shield/ad_san_jose.png"
 	},
 	{
 		"name":"AD Pvo. Sevilla Este",
@@ -115,7 +115,7 @@
 		"shield":"img/shield/ad_sevilla_este.jpg"
 	},
 	{
-		"name":"Amigos Dvos. Cerro del Águila",
+		"name":"AD Cerro del Águila",
 		"id":"004",
 		"address":"Calle Dante, s/n (Antiguo Colegio Santa Teresa)",
 		"phone":"620554486",
@@ -531,7 +531,7 @@
 		"shield":"img/shield/cd_utrera.png"
 	},
 	{
-		"name":"Centro Histórico AA.VV.",
+		"name":"Centro Hco. AAVV",
 		"id":"019",
 		"address":"Calle Venecia, local 3",
 		"phone":"625879307         ",
@@ -568,7 +568,7 @@
 		"shield":"img/shield/centro_historico.png"
 	},
 	{
-		"name":"CD Círculo Don Bosco",
+		"name":"Círculo Don Bosco",
 		"id":"020",
 		"address":"Calle Estafeta, 1",
 		"phone":"635483892",
@@ -972,10 +972,10 @@
 					"names":["Jesús Sotelo", "Francisco José Ruiz", "José Luis Jiménez", "Juan Luis Grove", "Israel Fernández", "Raúl Fernández", "José Miguel Mojío", "José Antonio Amuedo", "Álvaro Pérez", "José Mayo", "José María Jiménez", "José Manuel Busto", "Alonso Jurado", "José María Amuedo", "Juan Jesús Martínez", "Alejandro Segura"]
 				}
 		],
-		"shield":"img/shield/los_palacios.gif"
+		"shield":"img/shield/los_palacios.jpg"
 	},
 	{
-		"name":"UD Mairena del Aljarafe ",
+		"name":"UD Mairena del Alj.",
 		"id":"035",
 		"address":"Calle Mariana Pineda, s/n, Mairena del Aljarafe",
 		"phone":"954181786",
@@ -1158,7 +1158,7 @@
 		"shield":"img/shield/paradas_balompie.png"
 	},
 	{
-		"name":"Peloteros Sierra Sur Sevilla",
+		"name":"Peloteros Sierra Sur",
 		"id":"042",
 		"address":"Calle Meridiana, 8, La Puebla de Cazalla",
 		"phone":"661284788",
@@ -1344,7 +1344,7 @@
 		"shield":"img/shield/tomares.png"
 	},
 	{
-		"name":"CD Tor del Rey de Pilas",
+		"name":"CD Tor del Rey Pilas",
 		"id":"048",
 		"address":"Plaza de Belén, s/n, Pilas",
 		"phone":"955754910",

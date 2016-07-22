@@ -9,60 +9,56 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <script type="text/javascript" src="js/angular.min.js"></script>
-    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/angular-route.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2SF4gOXnBt_n9AuZxhcKca-S7ykvaFNQ&callback=initMap">
     </script>
 
-  <script src="http://rawgit.com/allenhwkim/angularjs-google-maps/master/build/scripts/ng-map.min.js"></script>
+    <script src="http://rawgit.com/allenhwkim/angularjs-google-maps/master/build/scripts/ng-map.min.js"></script>
 
 </head>
 
 <body ng-controller="teams">
 	
 <!-- Navigation -->
-	<div class="navbar-fixed">
-		<nav>
-		    <div class="nav-wrapper">
-			    <a href="#" class="brand-logo center">Logo</a>
-			    <ul id="nav-mobile" class="left hide-on-med-and-down">
-			        <li><a href="cosa1.html">Cosa 1</a></li>
-			        <li><a href="cosa2.html">Cosa 2</a></li>
-			        <li><a href="cosa3.html">Cosa 3</a></li>
-			    </ul>
-		    </div>
-	  	</nav>
-	</div>
+	<est-navbar></est-navbar>
 
 <!-- Buttons -->
     <p></p>
 
-	<a class="waves-effect blue-grey btn-large" ng-click="centerOnMe()">Mi posición</a>
-    <a class="waves-effect blue-grey btn-large" ng-click="category = {category:''}">Todos los equipos</a>
+    <a class="waves-effect blue-grey btn-large" href="#/mapa">Mi posición</a>
+    <a class="waves-effect blue-grey btn-large" href="#/teams" ng-click="category = {category:''}">Todos los equipos</a>
     <a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Amateur'}">Amateur</a>
     <a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Juvenil'}">Juvenil</a>
     <a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Cadete'}">Cadete</a>
     <a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Infantil'}">Infantil</a>
     <a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Alevin'}">Alevín</a>
     <a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Benjamin'}">Benjamín</a>
+    <a class="waves-effect blue-grey btn-large" href="#/once">Once ideal</a>
 	  
-<!-- Map -->  
-    <div class="mapWrap" data-tap-disabled="true">
-        <map center="{{lat1}},{{lon1}}" zoom="12"> 
-        	<marker position="{{lat1}},{{lon1}}"></marker>
-
-          	<marker ng-repeat="team in teams" position="{{team.position[0]}},{{team.position[1]}}"></marker>
-        </map> 
-    </div>
-
     <p><strong>Te encuentras en</strong> {{address}}</p>
     <p><strong>El estadio más cercano está en</strong></p>
 
-<!-- Teams -->
-    <section ng-repeat="team in teams">
-        <article ng-repeat="te in team.clubs | filter:category">
+   
 
-            <h1>{{team.name}}</h1>
+
+	
+	<div class="container" ng-view>
+	
+	</div>
+
+	<!-- <div class="container" ng-repeat="team in teams">
+		<div class="col s3" ng-repeat="te in team.clubs">
+        <p>{{te.names[0]}}</p>  
+        </div>
+    </div>  -->
+	
+
+
+
+
+            <!-- <h1>{{team.name}}</h1>
 
             <img ng-src="{{team.shield}}" />
 
@@ -84,12 +80,11 @@
                 <li><strong>Centrocampistas: </strong>{{te.names[5]}}, {{te.names[6]}}, {{te.names[7]}}, {{te.names[8]}}, {{te.names[14]}}</li>
                 <li><strong>Delanteros: </strong>{{te.names[9]}}, {{te.names[10]}}, {{te.names[15]}}</li>
             </ul>
+ -->
+
+    
 
 
-    </section>
-
-
-    <script type="text/javascript" src="js/angular-route.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 

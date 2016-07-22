@@ -1,0 +1,16 @@
+
+
+<div class="col s12">
+	
+    <img src="img/campo.jpeg" width="100%">
+    <a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Amateur'}">Amateur</a>
+	<a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Juvenil'}">Juvenil</a>
+	<a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Cadete'}">Cadete</a>
+    <a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Infantil'}">Infantil</a>
+    <a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Alevin'}">Alevín</a>
+    <a class="waves-effect blue-grey btn-large" ng-click="category = {category:'Benjamin'}">Benjamín</a>
+</div>
+	<div ng-repeat="team in teams">
+		<p ng-repeat="te in team.clubs | filter:category">{{team.name}}, {{te.names[0]}}, {{te.names[11]}}</p>
+    </div>
+

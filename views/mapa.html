@@ -1,0 +1,10 @@
+<!-- Map -->  
+<div class="row">
+    <div class="mapWrap" data-tap-disabled="true">
+        <map center="{{lat1}},{{lon1}}" zoom="12"> 
+        	<marker position="{{lat1}},{{lon1}}"></marker>
+
+          	<marker ng-repeat="team in teams" position="{{team.position[0]}},{{team.position[1]}}"></marker>
+        </map> 
+    </div>
+</div>
