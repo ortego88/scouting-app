@@ -1,7 +1,9 @@
 <!-- Map -->  
 <div class="row">
+	<p><strong>Te encuentras en</strong> {{address}}</p>
+    <p><strong>El estadio más cercano está en</strong></p>
     <div class="mapWrap" data-tap-disabled="true">
-        <map center="{{lat1}},{{lon1}}" zoom="12"> 
+        <map center="{{lat1}},{{lon1}}" zoom="12" default-style="false"> 
         	<marker position="{{lat1}},{{lon1}}"></marker>
 
           	<marker ng-repeat="team in teams" position="{{team.position[0]}},{{team.position[1]}}"></marker>

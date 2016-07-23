@@ -1,0 +1,84 @@
+
+<div ng-controller="newController">
+    <div class="col s12">
+
+<section class="pitch" ng-repeat="team in teams | filter:name">
+    <article ng-repeat="te in team.clubs | filter:category">
+        <div class="field left">
+            <div class="penalty-area">
+            </div>
+        </div>
+        <div class="field right">
+            <div class="penalty-area">
+            </div>
+        </div>
+        <div class="center-circle"></div>
+      <div class="home-team">
+        <div class="player one">1.{{te.names[0]}}</div>
+        <div class="player two">2.{{te.names[1]}}</div>
+        <div class="player three">3.{{te.names[2]}}</div>
+        <div class="player four">4.{{te.names[3]}}</div>
+        <div class="player five">5.{{te.names[4]}}</div>
+        <div class="player six">6.{{te.names[5]}}</div>
+        <div class="player seven">7.{{te.names[6]}}</div>
+        <div class="player eight">8.{{te.names[7]}}</div>
+        <div class="player nine">9.{{te.names[8]}}</div>
+        <div class="player ten">10.{{te.names[9]}}</div>
+        <div class="player eleven">11.{{te.names[10]}}</div>
+      </div>
+      <div class="visitor-team">
+        <div class="player one"></div>
+        <div class="player two"></div>
+        <div class="player three"></div>
+        <div class="player four"></div>
+        <div class="player five"></div>
+        <div class="player six"></div>
+        <div class="player seven"></div>
+        <div class="player eight"></div>
+        <div class="player nine"></div>
+        <div class="player ten"></div>
+        <div class="player eleven"></div>
+      </div>
+    </article>
+</section>
+
+
+        <div ng-repeat="team in teams | filter:name">
+            <ul class="right hide-on-med-and-down" ng-repeat="te in team.clubs">    
+                <li>
+                <a class="waves-effect blue-grey btn-large" href="#clubs/{{team.name}}/{{te.category}}">{{te.category}}</a>
+                </li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+
+
+    <div class="col s3" ng-repeat="team in teams | filter:{name:name}">
+        <article ng-repeat="te in team.clubs | filter:category">
+            <h5>{{team.name}} ({{te.category}})</h5>
+            <ul>
+            <li><a>1. {{te.names[0]}}</a></li>
+            <li><a>2. {{te.names[1]}}</a></li>
+            <li><a>3. {{te.names[2]}}</a></li>
+            <li><a>4. {{te.names[3]}}</a></li>
+            <li><a>5. {{te.names[4]}}</a></li>
+            <li><a>6. {{te.names[5]}}</a></li>
+            <li><a>7. {{te.names[6]}}</a></li>
+            <li><a>8. {{te.names[7]}}</a></li>
+            <li><a>9. {{te.names[8]}}</a></li>
+            <li><a>10. {{te.names[9]}}</a></li>
+            <li><a>11. {{te.names[10]}}</a></li>
+            <li><a>12. {{te.names[12]}}</a></li>
+            <li><a>13. {{te.names[11]}}</a></li>
+            <li><a>14. {{te.names[13]}}</a></li>
+            <li><a>15. {{te.names[14]}}</a></li>
+            <li><a>16. {{te.names[15]}}</a></li>
+            </ul>
+        </article>
+    </div>
+</div>

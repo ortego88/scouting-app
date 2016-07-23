@@ -7,13 +7,11 @@
 			    	<img class="activator" ng-src="{{team.shield}}" width="20px" height="300px">
 			    </div>
 			    <div class="card-content">
-			      	<span class="card-title activator grey-text text-darken-4">{{team.name}}<i class="material-icons right">more_vert</i></span>
+			      	<span class="card-title activator grey-text text-darken-4">{{team.name}}</span>
 			    </div>
 			    <div class="card-reveal">
 			      	<span class="card-title grey-text text-darken-4">{{team.name}}<i class="material-icons right">close</i></span>
-			      	<div ng-repeat="te in team.clubs">
-			      	<a href="#/mapa">{{te.category}}</a>
-			      	</div>
+			      	<a href="#clubs/{{team.name}}">Información del club</a>
 			    </div>
 			</div>
 	</section>

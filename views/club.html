@@ -1,0 +1,37 @@
+
+<div ng-controller="newController">
+    <div class="col s12">
+
+    	
+        
+        <div ng-repeat="team in teams | filter:name">
+        <img ng-src="{{team.shield}}" class="center-align">
+            <div class="right hide-on-med-and-down" ng-repeat="te in team.clubs">    
+                <a class="waves-effect blue-grey btn-large" href="#clubs/{{team.name}}/{{te.category}}">{{te.category}}</a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+<div class="col s3" ng-repeat="team in teams | filter:{name:name}">
+        <article>
+            <h4>{{team.name}}</h4>
+            <ul>
+            <li>{{team.address}}</li>
+            <li>{{team.phone}}</li>
+            <li>{{team.email}}</li>
+            <li>{{team.stadium}}</li>
+            <ul>
+                <h5>Equipación</h5>
+            <li><strong>Camiseta: </strong>{{team.uniform[0].shirt}}</li>
+            <li><strong>Pantalones: </strong>{{team.uniform[0].pants}}</li>
+            <li><strong>Medias: </strong>{{team.uniform[0].socks}}</li>
+            </ul>
+            </ul>
+        </article>
+    </div>
+ 
+</div>

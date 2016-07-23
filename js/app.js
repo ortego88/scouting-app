@@ -2,23 +2,29 @@ var app = angular.module('scoutingApp', ['ngRoute','ngMap']);
 
 app.config(['$routeProvider',function($routeProvider) {
 	$routeProvider
-		.when('/teams', {
+		.when('/clubs', {
 			templateUrl: 'views/allTeams.html',
 			controller: 'teams' 
 		})
 
-		.when('/once', {
-			templateUrl: 'views/team.html',
-			controller: 'teams' 
-		})
+		.when('/clubs/:name', {
+        templateUrl: 'views/club.html',
+        controller: 'teams'
+    	})
 
 		.when('/mapa', {
 			templateUrl: 'views/mapa.html',
 			controller: 'teams' 
 		})
+
+		.when('/clubs/:name/:category', {
+        templateUrl: 'views/teamcategory.html',
+        controller: 'anotherController'
+    	})
 }]);
 
 app.controller("teams", ["$scope","$http", function($scope, $http){
+	
 	$http.get("js/footballJson.json").success(function(data){
 		$scope.teams = data;
 	});
@@ -49,7 +55,11 @@ app.controller("teams", ["$scope","$http", function($scope, $http){
 
 }]);
 
+app.controller("newController", ["$scope","$http","$routeParams", function($scope, $http, $routeParams) {
+    $scope.name = $routeParams.name;}]);
 
+app.controller("anotherController", ["$scope","$http","$routeParams", function($scope, $http, $routeParams) {
+    $scope.category = $routeParams.category;}]);
 
 app.directive('estNavbar',[function(){
 	return {
