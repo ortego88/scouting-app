@@ -110,175 +110,62 @@
   position:absolute;
   left:3px;
 }
-.home-team .player{
-  background:red;
-}
+
 .home-team .player.one{
-  top:190px;
-  left:20px;
-  background:gray;
-}
-.home-team .player.one:after{
-  content:"";
+  top:45%;
+  left:4%;
+  font-weight: bold;
 }
 .home-team .player.two{
-  top:310px;
-  left:80px;
-}
-.home-team .player.two:after{
-  content:"";
+  top:81%;
+  left:22%;
+  font-weight: bold;
 }
 .home-team .player.three{
-  top:60px;
-  left:80px;
-}
-.home-team .player.three:after{
-  content:"";
+  top:15%;
+  left:22%;
+  font-weight: bold;
 }
 .home-team .player.four{
-  top:145px;
-  left:80px;
-}
-.home-team .player.four:after{
-  content:"";
+  top:38%;
+  left:18%;
+  font-weight: bold;
 }
 .home-team .player.five{
-  top:225px;
-  left:80px;
-}
-.home-team .player.five:after{
-  content:"";
+  top:59%;
+  left:18%;
+  font-weight: bold;
 }
 .home-team .player.six{
-  top:310px;
-  left:160px;
-}
-.home-team .player.six:after{
-  content:"";
+  top:81%;
+  left:53%;
+  font-weight: bold;
 }
 .home-team .player.seven{
-  top:60px;
-  left:160px;
-}
-.home-team .player.seven:after{
-  content:"";
+  top:15%;
+  left:53%;
+  font-weight: bold;
 }
 .home-team .player.eight{
-  top:145px;
-  left:160px;
-}
-.home-team .player.eight:after{
-  content:"";
+  top:38%;
+  left:49%;
+  font-weight: bold;
 }
 .home-team .player.nine{
-  top:225px;
-  left:160px;
-}
-.home-team .player.nine:after{
-  content:"";
+  top:59%;
+  left:49%;
+  font-weight: bold;
 }
 .home-team .player.ten{
-  top:145px;
-  left:240px;
-}
-.home-team .player.ten:after{
-  content:"";
-  left:0px;
+  top:38%;
+  right:20%;
+  font-weight: bold;
 }
 .home-team .player.eleven{
-  top:225px;
-  left:240px;
-}
-.home-team .player.eleven:after{
-  content:"";
-  left:0px;
-}
-.visitor-team .player{
-  background:blue;
-}
-.visitor-team .player:after{
-  color:white;
-}
-.visitor-team .player.one{
-  top:190px;
-  right:20px;
-  background:cyan;
-}
-.visitor-team .player.one:after{
-  content:"";
-  color:red;
-}
-.visitor-team .player.two{
-  top:310px;
-  right:80px;
-}
-.visitor-team .player.two:after{
-  content:"";
-}
-.visitor-team .player.three{
-  top:60px;
-  right:80px;
-}
-.visitor-team .player.three:after{
-  content:"";
-}
-.visitor-team .player.four{
-  top:145px;
-  right:80px;
-}
-.visitor-team .player.four:after{
-  content:"";
-}
-.visitor-team .player.five{
-  top:225px;
-  right:80px;
-}
-.visitor-team .player.five:after{
-  content:"";
-}
-.visitor-team .player.six{
-  top:310px;
-  right:160px;
-}
-.visitor-team .player.six:after{
-  content:"";
-}
-.visitor-team .player.seven{
-  top:60px;
-  right:160px;
-}
-.visitor-team .player.seven:after{
-  content:"";
-}
-.visitor-team .player.eight{
-  top:145px;
-  right:160px;
-}
-.visitor-team .player.eight:after{
-  content:"";
-}
-.visitor-team .player.nine{
-  top:225px;
-  right:160px;
-}
-.visitor-team .player.nine:after{
-  content:"";
-}
-.visitor-team .player.ten{
-  top:145px;
-  right:240px;
-}
-.visitor-team .player.ten:after{
-  content:"";
-  left:0px;
-}
-.visitor-team .player.eleven{
-  top:225px;
-  right:240px;
-}
-.visitor-team .player.eleven:after{
-  content:"";
-  left:0px;
+  top:59%;
+  right:20%;
+  font-weight: bold;
+
 }
 .player{
   animation-duration:5s;
@@ -295,4 +182,17 @@ map {
   position:absolute;
   width: 70%;
   height: 66%;
+}
+#map-box {
+  height: 600px;
+}
+
+/* Button */
+#but {
+  height: 50px;
+  width: 80px;
+  background-image: url("../img/campo.jpeg");
+  background-size: 80px 50px;
+  color: white;
+  margin-right: 5px;
 }

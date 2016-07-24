@@ -1,7 +1,13 @@
 var app = angular.module('scoutingApp', ['ngRoute','ngMap']);
 
+
 app.config(['$routeProvider',function($routeProvider) {
 	$routeProvider
+		.when('/', {
+			templateUrl: 'views/slides.html',
+			controller: 'sliderController' 
+		})
+
 		.when('/clubs', {
 			templateUrl: 'views/allTeams.html',
 			controller: 'teams' 
@@ -15,6 +21,11 @@ app.config(['$routeProvider',function($routeProvider) {
 		.when('/mapa', {
 			templateUrl: 'views/mapa.html',
 			controller: 'teams' 
+		})
+
+		.when('/fecha', {
+			templateUrl: 'views/fecha.html',
+			controller: 'dateController' 
 		})
 
 		.when('/clubs/:name/:category', {
@@ -55,6 +66,12 @@ app.controller("teams", ["$scope","$http", function($scope, $http){
 
 }]);
 
+app.controller('sliderController', ['$scope', function($scope){
+angular.element(document).ready(function(){
+	$('.slider').slider({full_width: true});
+});
+}]);
+
 app.controller("newController", ["$scope","$http","$routeParams", function($scope, $http, $routeParams) {
     $scope.name = $routeParams.name;}]);
 
@@ -67,3 +84,21 @@ app.directive('estNavbar',[function(){
 		templateUrl: 'views/navbar.html'
 	}
 }]);
+
+app.directive('estFooter',[function(){
+	return {
+		restrict: 'E',
+		templateUrl: 'views/footer.html'
+	}
+}]);
+
+app.controller("dateController", ["$scope","$http", function($scope, $http){
+	
+	$http.get("js/calendarioJson.json").success(function(data){
+		$scope.calendario = data;
+
+	});
+
+}]);
+
+

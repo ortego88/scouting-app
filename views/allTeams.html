@@ -1,18 +1,18 @@
 <!-- Teams -->
 <div class="row">
+	<h2 class="center">Conjuntos</h2>
 	<section class="col s3" ng-repeat="team in teams">
-		
-			<div class="card">
-			    <div class="card-image waves-effect waves-block waves-light">
-			    	<img class="activator" ng-src="{{team.shield}}" width="20px" height="300px">
-			    </div>
-			    <div class="card-content">
-			      	<span class="card-title activator grey-text text-darken-4">{{team.name}}</span>
-			    </div>
-			    <div class="card-reveal">
-			      	<span class="card-title grey-text text-darken-4">{{team.name}}<i class="material-icons right">close</i></span>
-			      	<a href="#clubs/{{team.name}}">Información del club</a>
-			    </div>
-			</div>
+		<div class="card">
+		    <div class="card-image waves-effect waves-block waves-light">
+		    	<img class="activator" ng-src="{{team.shield}}" width="20px" height="300px">
+		    </div>
+		    <div class="card-content">
+		      	<span class="card-title activator grey-text text-darken-4">{{team.name}}</span>
+		    </div>
+		    <div class="card-reveal">
+		      	<span class="card-title grey-text text-darken-4">{{team.name}}<i class="material-icons right">close</i></span>
+		      	<a href="#clubs/{{team.name}}">Información del club</a>
+		    </div>
+		</div>
 	</section>
 </div>
