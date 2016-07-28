@@ -1,0 +1,73 @@
+<div ng-repeat="team in teams">
+    <div ng-repeat="te in team.fixCat | filter:{id:id}">
+        <h2 class="center">{{te.match[0]}} - {{te.match[1]}}</h2>
+		<h4 class="center">{{te.fixCategory}}</h4>
+		<p class="center"><strong>Estadio: </strong>{{te.stadium}} - <strong>Fecha: {{te.date | date:'dd/MMMM/yyyy - HH:mm'}}</strong></p>
+		
+		<section class="pitch">
+		    <div class="field left">
+		        <div class="penalty-area">
+		        </div>
+		    </div>
+		    <div class="field right">
+		        <div class="penalty-area">
+		        </div>
+		    </div>
+		    <div class="center-circle"></div>
+		  	<div class="home-team">
+			    <div class="player first">1.{{te.localTeam[0]}}</div>
+			    <div class="player second">2.{{te.localTeam[1]}}</div>
+			    <div class="player third">3.{{te.localTeam[2]}}</div>
+			    <div class="player fourth">4.{{te.localTeam[3]}}</div>
+			    <div class="player fiveth">5.{{te.localTeam[4]}}</div>
+			    <div class="player sixth">6.{{te.localTeam[5]}}</div>
+			    <div class="player seventh">7.{{te.localTeam[6]}}</div>
+			    <div class="player eighth">8.{{te.localTeam[7]}}</div>
+			    <div class="player nineth">9.{{te.localTeam[8]}}</div>
+			    <div class="player tenth">10.{{te.localTeam[9]}}</div>
+			    <div class="player eleventh">11.{{te.localTeam[10]}}</div>
+			</div>
+
+			<div class="visitor-team">
+			    <div class="player first">1.{{te.awayTeam[0]}}</div>
+			    <div class="player second">2.{{te.awayTeam[1]}}</div>
+			    <div class="player third">3.{{te.awayTeam[2]}}</div>
+			    <div class="player fourth">4.{{te.awayTeam[3]}}</div>
+			    <div class="player fiveth">5.{{te.awayTeam[4]}}</div>
+			    <div class="player sixth">6.{{te.awayTeam[5]}}</div>
+			    <div class="player seventh">7.{{te.awayTeam[6]}}</div>
+			    <div class="player eighth">8.{{te.awayTeam[7]}}</div>
+			    <div class="player nineth">9.{{te.awayTeam[8]}}</div>
+			    <div class="player tenth">10.{{te.awayTeam[9]}}</div>
+			    <div class="player eleventh">11.{{te.awayTeam[10]}}</div>
+			</div>
+		</section>
+
+		<div class="row">
+		<br>
+		<br>
+		<div class="col s3"><strong>Reservas:</strong></div>
+		<div class="col s3">
+			<p><strong>{{te.match[0]}}</strong></p>
+            <ul>
+                <li>12. {{te.localTeam[12]}}</li>
+                <li>13. {{te.localTeam[11]}}</li>
+                <li>14. {{te.localTeam[13]}}</li>
+                <li>15. {{te.localTeam[14]}}</li>
+                <li>16. {{te.localTeam[15]}}</li>
+            </ul>
+		</div>
+		
+		<div class="col s3">
+			<p><strong>{{te.match[1]}}</strong></p>
+            <ul>
+                <li>12. {{te.awayTeam[12]}}</li>
+                <li>13. {{te.awayTeam[11]}}</li>
+                <li>14. {{te.awayTeam[13]}}</li>
+                <li>15. {{te.awayTeam[14]}}</li>
+                <li>16. {{te.awayTeam[15]}}</li>
+            </ul>
+		</div>
+		
+    </div>
+</div>

@@ -1,76 +1,83 @@
 <div ng-controller="newController">
-    
-        <div ng-repeat="team in teams | filter:name">
-            <div ng-repeat="te in team.clubs | filter:category">
-                <h2 class="center">{{team.name}} ({{te.category}})</h2>
-                <section class="pitch">
-                    <article>
-                        <div class="field left">
-                            <div class="penalty-area">
-                            </div>
-                        </div>
-                        <div class="field right">
-                            <div class="penalty-area">
-                            </div>
-                        </div>
-                        <div class="center-circle"></div>
-                        <div class="home-team"><strong>
-                    <div class="player one">1.{{te.names[0]}}</div>
-                    <div class="player two">2.{{te.names[1]}}</div>
-                    <div class="player three">3.{{te.names[2]}}</div>
-                    <div class="player four">4.{{te.names[3]}}</div>
-                    <div class="player five">5.{{te.names[4]}}</div>
-                    <div class="player six">6.{{te.names[5]}}</div>
-                    <div class="player seven">7.{{te.names[6]}}</div>
-                    <div class="player eight">8.{{te.names[7]}}</div>
-                    <div class="player nine">9.{{te.names[8]}}</div>
-                    <div class="player ten">10.{{te.names[9]}}</div>
-                    <div class="player eleven">11.{{te.names[10]}}</div></strong>
-                        </div>
-                    </article>
-                </section>
+    <div class="row">
+        <div class="col s9">
+
+            <div ng-repeat="team in teams">
+                <div ng-repeat="te in team.squads | filter:name">
+                    <div ng-repeat="club in te.clubs | filter:category">
+                        <h2 class="center">{{te.name}} ({{club.category}})</h2>
+                        <section class="pitch">
+                            <article>
+                                <div class="field left">
+                                    <div class="penalty-area">
+                                    </div>
+                                </div>
+                                <div class="field right">
+                                    <div class="penalty-area">
+                                    </div>
+                                </div>
+                                <div class="center-circle"></div>
+                                <div class="home-team">
+                                    <strong><div class="player one">1.{{club.names[0]}}</div>
+                                    <div class="player two">2.{{club.names[1]}}</div>
+                                    <div class="player three">3.{{club.names[2]}}</div>
+                                    <div class="player four">4.{{club.names[3]}}</div>
+                                    <div class="player five">5.{{club.names[4]}}</div>
+                                    <div class="player six">6.{{club.names[5]}}</div>
+                                    <div class="player seven">7.{{club.names[6]}}</div>
+                                    <div class="player eight">8.{{club.names[7]}}</div>
+                                    <div class="player nine">9.{{club.names[8]}}</div>
+                                    <div class="player ten">10.{{club.names[9]}}</div>
+                                    <div class="player eleven">11.{{club.names[10]}}</div></strong>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                </div>
             </div>
         </div>
 
-
-        <div ng-repeat="team in teams | filter:name">
-            <ul class="right hide-on-med-and-down" ng-repeat="te in team.clubs">
-                <li>
-                    <a class="waves-effect blue-grey btn-large" href="#clubs/{{team.name}}/{{te.category}}">{{te.category}}</a>
-                </li>
-            </ul>
-            <br>
-            <br>
-            <br>
-            <br>
+        <div class="col s3 right hide-on-med-and-down" ng-repeat="team in teams">
+            <div ng-repeat="te in team.squads | filter:{name:name}">
+                <article ng-repeat="club in te.clubs | filter:category">
+                    <ul>
+                        <li><img src="img/player1.png" width="30px" height="30px"> {{club.names[0]}}</li>
+                        <li><img src="img/player2.png" width="30px" height="30px"> {{club.names[1]}}</li>
+                        <li><img src="img/player3.png" width="30px" height="30px"> {{club.names[2]}}</li>
+                        <li><img src="img/player4.png" width="30px" height="30px"> {{club.names[3]}}</li>
+                        <li><img src="img/player5.png" width="30px" height="30px"> {{club.names[4]}}</li>
+                        <li><img src="img/player6.png" width="30px" height="30px"> {{club.names[5]}}</li>
+                        <li><img src="img/player7.png" width="30px" height="30px"> {{club.names[6]}}</li>
+                        <li><img src="img/player8.png" width="30px" height="30px"> {{club.names[7]}}</li>
+                        <li><img src="img/player9.png" width="30px" height="30px"> {{club.names[8]}}</li>
+                        <li><img src="img/player10.png" width="30px" height="30px"> {{club.names[9]}}</li>
+                        <li><img src="img/player11.png" width="30px" height="30px"> {{club.names[10]}}</li>
+                        <p>
+                            <strong>Reservas:</strong>
+                        </p>
+                        <li>12. {{club.names[12]}}</li>
+                        <li>13. {{club.names[11]}}</li>
+                        <li>14. {{club.names[13]}}</li>
+                        <li>15. {{club.names[14]}}</li>
+                        <li>16. {{club.names[15]}}</li>
+                    </ul>
+                </article>
+            </div>
         </div>
 
-        <a href="#/fecha">Botón de fecha</a>
+        <div ng-repeat="team in teams">
+            <div ng-repeat="te in team.squads | filter:name">
+                <ul class="left hide-on-med-and-down" ng-repeat="club in te.clubs">
+                    <li>
+                        <button id="btn-std" class="waves-effect green darken-2 btn-large"><a style="color:white" href="#clubs/{{te.name}}/{{club.category}}">{{club.category}}</a></button>
+                    </li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
 
-    <div class="col s3" ng-repeat="team in teams | filter:{name:name}">
-        <article ng-repeat="te in team.clubs | filter:category">
-            <h5>{{team.name}} ({{te.category}})</h5>
-            <ul>
-                <li><img src="img/player1.png" width="30px" height="30px"> {{te.names[0]}}</li>
-                <li><img src="img/player2.png" width="30px" height="30px"> {{te.names[1]}}</li>
-                <li><img src="img/player3.png" width="30px" height="30px"> {{te.names[2]}}</li>
-                <li><img src="img/player4.png" width="30px" height="30px"> {{te.names[3]}}</li>
-                <li><img src="img/player5.png" width="30px" height="30px"> {{te.names[4]}}</li>
-                <li><img src="img/player6.png" width="30px" height="30px"> {{te.names[5]}}</li>
-                <li><img src="img/player7.png" width="30px" height="30px"> {{te.names[6]}}</li>
-                <li><img src="img/player8.png" width="30px" height="30px"> {{te.names[7]}}</li>
-                <li><img src="img/player9.png" width="30px" height="30px"> {{te.names[8]}}</li>
-                <li><img src="img/player10.png" width="30px" height="30px"> {{te.names[9]}}</li>
-                <li><img src="img/player11.png" width="30px" height="30px"> {{te.names[10]}}</li>
-                <p>
-                    <strong>Reservas:</strong>
-                </p>
-                <li>12. {{te.names[12]}}</li>
-                <li>13. {{te.names[11]}}</li>
-                <li>14. {{te.names[13]}}</li>
-                <li>15. {{te.names[14]}}</li>
-                <li>16. {{te.names[15]}}</li>
-            </ul>
-        </article>
-    </div>
+    </div> 
 </div>

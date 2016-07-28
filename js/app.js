@@ -1,6 +1,5 @@
 var app = angular.module('scoutingApp', ['ngRoute','ngMap']);
 
-
 app.config(['$routeProvider',function($routeProvider) {
 	$routeProvider
 		.when('/', {
@@ -23,9 +22,19 @@ app.config(['$routeProvider',function($routeProvider) {
 			controller: 'teams' 
 		})
 
-		.when('/fecha', {
-			templateUrl: 'views/fecha.html',
-			controller: 'dateController' 
+		.when('/jornada', {
+			templateUrl: 'views/fixture.html',
+			controller: 'teams' 
+		})
+
+		.when('/versus/:id', {
+			templateUrl: 'views/versus.html',
+			controller: 'versusController' 
+		})
+
+		.when('/jornada/:fixCategory', {
+			templateUrl: 'views/fixture2.html',
+			controller: 'fixController' 
 		})
 
 		.when('/clubs/:name/:category', {
@@ -40,6 +49,15 @@ app.controller("teams", ["$scope","$http", function($scope, $http){
 		$scope.teams = data;
 	});
 
+	$scope.showTeam = function(event, team) {
+            $scope.selectedTeam = team;
+            $scope.map.showInfoWindow('myInfoWindow', this);
+        };
+
+angular.element(document).ready(function(){
+	$(".dropdown-button").dropdown();
+});
+
 	if (navigator.geolocation) navigator.geolocation.getCurrentPosition(onPositionUpdate);
  
 	function onPositionUpdate(position) {
@@ -47,15 +65,13 @@ app.controller("teams", ["$scope","$http", function($scope, $http){
 	    var lng = position.coords.longitude;
 	    var url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + lat + "," + lng + "&sensor=true";
 	    $http.get(url)
-	        .then(function(result) {
+	        .then(function(result) {this
 	            var address = result.data.results[0].formatted_address;
 	            var lat1 = result.data.results[0].geometry.location.lat;
 	            var lon1 = result.data.results[0].geometry.location.lng;
 	            $scope.address = address;
 	            $scope.lat1 = lat1;
 	            $scope.lon1 = lon1;
-	            console.log(position)
-	            console.log(position.coords.longitude)
 
 	        });
 	};
@@ -69,6 +85,7 @@ app.controller("teams", ["$scope","$http", function($scope, $http){
 app.controller('sliderController', ['$scope', function($scope){
 angular.element(document).ready(function(){
 	$('.slider').slider({full_width: true});
+	$(".dropdown-button").dropdown();
 });
 }]);
 
@@ -77,6 +94,12 @@ app.controller("newController", ["$scope","$http","$routeParams", function($scop
 
 app.controller("anotherController", ["$scope","$http","$routeParams", function($scope, $http, $routeParams) {
     $scope.category = $routeParams.category;}]);
+
+app.controller("fixController", ["$scope","$http","$routeParams", function($scope, $http, $routeParams) {
+    $scope.fixCategory = $routeParams.fixCategory;}]);
+
+app.controller("versusController", ["$scope","$http","$routeParams", function($scope, $http, $routeParams) {
+    $scope.id = $routeParams.id;}]);
 
 app.directive('estNavbar',[function(){
 	return {
@@ -91,14 +114,3 @@ app.directive('estFooter',[function(){
 		templateUrl: 'views/footer.html'
 	}
 }]);
-
-app.controller("dateController", ["$scope","$http", function($scope, $http){
-	
-	$http.get("js/calendarioJson.json").success(function(data){
-		$scope.calendario = data;
-
-	});
-
-}]);
-
-

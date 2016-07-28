@@ -1,16 +1,31 @@
 <!-- Map -->  
 <div class="row">
-	<article id=map-box>
-	<p><strong>Te encuentras en</strong> {{address}}</p>
-    <p><strong>El estadio más cercano está en</strong></p>
-    
-    
-    <div class="mapWrap" data-tap-disabled="true">
-        <map center="{{lat1}},{{lon1}}" zoom="12" default-style="false"> 
-        	<marker position="{{lat1}},{{lon1}}"></marker>
+  	<article id=map-box>
+      	<h3 class="center">Estás aquí</h3>
+        <h5 class="center">{{address}}</h5>
+        <p><strong>Leyenda:</strong></p>
+        <p><img src="img/soccerfield.png"> &nbsp Estadios</p>
+        <p><img src="img/googleicon.jpg" height="35px" width="35px"> &nbsp Mi posición</p>
+          
+        <input type="text" ng-model="search" placeholder="Busca el estadio">
 
-          	<marker ng-repeat="team in teams" position="{{team.position[0]}},{{team.position[1]}}"></marker>
-        </map> 
-    </div>
-   </article>
+        <div class="mapWrap" data-tap-disabled="true">
+            <map center="{{lat1}},{{lon1}}" zoom="12" default-style="false"> 
+            <info-window id="myInfoWindow">
+                
+                <div ng-non-bindable>
+                <a href="#/clubs/{{selectedTeam.name}}"><h6>{{selectedTeam.name}} &nbsp<img src="{{selectedTeam.shield}}" height="30px" width="20px"></h6></a>
+                <p>{{selectedTeam.stadium}}</p>
+                <p>{{selectedTeam.address}}</p>
+                </div>
+                  
+            </info-window>
+
+              	<marker position="{{lat1}},{{lon1}}"></marker>
+                <div ng-repeat="team in teams">
+                	  <marker data-icon="img/soccerfield.png" ng-repeat="te in team.squads | filter:search" position="{{te.position[0]}},{{te.position[1]}}" title="{{te.name}}" on-click="showTeam(event, te)"></marker>
+                </div>
+            </map>
+        </div>
+     </article>
 </div>

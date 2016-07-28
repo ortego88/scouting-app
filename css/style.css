@@ -184,7 +184,7 @@ map {
   height: 66%;
 }
 #map-box {
-  height: 600px;
+  height: 840px;
 }
 
 /* Button */
@@ -196,3 +196,265 @@ map {
   color: white;
   margin-right: 5px;
 }
+#btn-std {
+  margin: 10px;
+}
+#btn-fix{
+  height: 80px;
+  text-align: center;
+  color: white;
+  font-size: 28px;
+}
+
+/* Versus */
+.pitch{
+    background-color: #238729;
+    width: 590px;
+    height: 380px;
+    position: relative;
+}
+.pitch:after{
+  content: "";
+  border-left: 1px solid white;
+  position: absolute;
+  top :20px;
+  left :295px;
+  display:block;
+  height:340px;
+}
+
+.pitch:before{
+  content: "";
+  border: 1px solid white;
+  position: absolute;
+  top :20px;
+  left :20px;
+  display:block;
+  width: 550px;
+  height:340px;
+}
+
+.center-circle{
+    position: absolute;
+    top: 145px;
+    left: 250px;
+    width: 90px;
+    height: 90px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.center-circle:after{
+    position: absolute;
+    top: 43px;
+    left: 43px;
+    width: 1px;
+    height: 1px;
+    background-color:white;
+    content:"";
+    border:1px solid white;
+}
+
+.penalty-area{
+    position: absolute;
+    height: 140px;
+    width: 80px;
+    top: 120px;
+    border: 1px solid white;
+}
+
+.left .penalty-area{
+    left: 20px;
+    border-left: 0;
+}
+
+.right .penalty-area{
+    right: 19px;
+    border-right: 0;
+}
+
+.penalty-area:before{
+    position: absolute;
+    height: 70px;
+    width: 35px;
+    top: 35px;
+    border: 1px solid white;
+    content:"";
+}
+.left .penalty-area:before{
+   left:0px;
+  border-left:0;
+}
+.right .penalty-area:before{
+   right:0px;
+  border-right:0;
+}
+
+.penalty-area:after{
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    top: 70px;
+    background-color:white;
+    content:"";
+}
+.left .penalty-area:after{
+    right:15px;
+}
+.right .penalty-area:after{
+    left:15px;
+}
+
+.player{
+  position:absolute;
+  border-radius:50%;
+  width:10px;
+  height:10px;
+}
+.player:after{
+  font-size:10px;
+  position:absolute;
+  left:3px;
+}
+
+.home-team .player.first{
+  top:42%;
+  left:4%;
+  font-weight: bold;
+}
+
+.home-team .player.second{
+  top:290px;
+  left:85px;
+  font-weight: bold;
+}
+
+.home-team .player.third{
+  top:45px;
+  left:85px;
+  font-weight: bold;
+}
+
+.home-team .player.fourth{
+  top:130px;
+  left:85px;
+  font-weight: bold;
+}
+
+.home-team .player.fiveth{
+  top:210px;
+  left:85px;
+  font-weight: bold;
+}
+
+.home-team .player.sixth{
+  top:290px;
+  left:160px;
+  font-weight: bold;
+}
+
+.home-team .player.seventh{
+  top:45px;
+  left:160px;
+  font-weight: bold;
+}
+
+.home-team .player.eighth{
+  top:130px;
+  left:160px;
+  font-weight: bold;
+}
+
+.home-team .player.nineth{
+  top:210px;
+  left:160px;
+  font-weight: bold;
+}
+
+.home-team .player.tenth{
+  top:130px;
+  left:240px;
+  font-weight: bold;
+}
+
+.home-team .player.eleventh{
+  top:210px;
+  left:240px;
+  font-weight: bold;
+}
+
+.visitor-team .player.first{
+  top:42%;
+  right:4%;
+  font-weight: bold;
+}
+
+.visitor-team .player.second{
+  top:290px;
+  right:85px;
+  font-weight: bold;
+}
+
+.visitor-team .player.third{
+  top:45px;
+  right:85px;
+  font-weight: bold;
+}
+
+.visitor-team .player.fourth{
+  top:130px;
+  right:85px;
+  font-weight: bold;
+}
+
+.visitor-team .player.fiveth{
+  top:210px;
+  right:85px;
+  font-weight: bold;
+}
+
+.visitor-team .player.sixth{
+  top:310px;
+  right:160px;
+  font-weight: bold;
+}
+
+.visitor-team .player.seventh{
+  top:45px;
+  right:160px;
+  font-weight: bold;
+}
+
+.visitor-team .player.eighth{
+  top:130px;
+  right:160px;
+  font-weight: bold;
+}
+
+.visitor-team .player.nineth{
+  top:210px;
+  right:160px;
+  font-weight: bold;
+}
+
+.visitor-team .player.tenth{
+  top:130px;
+  right:240px;
+  font-weight: bold;
+}
+
+.visitor-team .player.eleventh{
+  top:210px;
+  right:240px;
+  font-weight: bold;
+}
+
+.player{
+  animation-duration:5s;
+  animation-timing-function:linear;
+  animation-delay:2s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+  animation-play-state:running;
+}
+.home-team .player.nine{
+  animation-name:nine;

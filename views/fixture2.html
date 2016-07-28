@@ -1,0 +1,38 @@
+<div ng-controller="fixController">	
+	<div class="row">
+
+		<div ng-repeat="team in teams | filter:{fixture:'1'}">
+		    <h3 ng-repeat="te in team.fixCat | filter:fixCategory | limitTo:1" class="center">Jornada {{team.fixture}} ({{te.fixCategory}})</h3>
+		    	
+			<div class="col s6">
+		    	<div ng-repeat="te in team.fixCat | filter:{fixCategory:fixCategory} | limitTo:4 ">
+		   
+			
+		    	<a href="#versus/{{te.id}}" style="color:black"><p><h5>{{te.match[0]}} - {{te.match[1]}} </h5><strong>Fecha: </strong>{{te.date | date:'dd MMMM yyyy - HH:mm'}}</p>
+		    	<p><img src="img/campo.jpeg" height="20px" width="40px"> &nbsp {{te.stadium}}</p></a>
+				</div>
+			</div>
+
+			<div class="col s6">
+				<div ng-repeat="te in team.fixCat | filter:{fixCategory:fixCategory} | limitTo:5:4">
+		   
+		    	<a href="#versus/{{te.id}}" style="color:black"><p><h5>{{te.match[0]}} - {{te.match[1]}} </h5><strong>Fecha: </strong>{{te.date | date:'dd MMMM yyyy - HH:mm'}}</p>
+		    	<p><img src="img/campo.jpeg" height="20px" width="40px"> &nbsp {{te.stadium}}</p></a>
+				</div>
+			</div>
+
+
+			<div class="col s3">
+				<br>
+			    <h4>Próximo partido:</h4>
+			</div>
+
+			<div class="col s6" ng-repeat="te in team.fixCat | orderBy:'date':reverse | filter : fixCategory:fixCategory | limitTo: 1">
+				<br>
+			    <a style="color:black" href="#versus/{{te.id}}"><h4>{{te.match[0]}} - {{te.match[1]}}</h4>
+				<p>({{te.date | date:'dd MMMM yyyy - HH:mm'}})</p></a>
+		    </div>
+		</div>
+
+	</div>
+</div>
