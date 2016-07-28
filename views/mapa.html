@@ -4,8 +4,8 @@
       	<h3 class="center">Estás aquí</h3>
         <h5 class="center">{{address}}</h5>
         <p><strong>Leyenda:</strong></p>
-        <p><img src="img/soccerfield.png"> &nbsp Estadios</p>
-        <p><img src="img/googleicon.jpg" height="35px" width="35px"> &nbsp Mi posición</p>
+        <p><img src="img/icons/soccerfield.png"> &nbsp Estadios</p>
+        <p><img src="img/icons/googleicon.jpg" height="35px" width="35px"> &nbsp Mi posición</p>
           
         <input type="text" ng-model="search" placeholder="Busca el estadio">
 
@@ -23,7 +23,7 @@
 
               	<marker position="{{lat1}},{{lon1}}"></marker>
                 <div ng-repeat="team in teams">
-                	  <marker data-icon="img/soccerfield.png" ng-repeat="te in team.squads | filter:search" position="{{te.position[0]}},{{te.position[1]}}" title="{{te.name}}" on-click="showTeam(event, te)"></marker>
+                	  <marker data-icon="img/icons/soccerfield.png" ng-repeat="te in team.squads | filter:search" position="{{te.position[0]}},{{te.position[1]}}" title="{{te.name}}" on-click="showTeam(event, te)"></marker>
                 </div>
             </map>
         </div>
